@@ -1,0 +1,14 @@
+{
+    "target": "DemandCategory",
+    "label_mapping": {
+        "0": "Normal Demand",
+        "1": "High Demand"
+    },
+    "models": {
+        "with_duration": "lightgbm_classifier_with_duration_pipeline.joblib",
+        "without_duration": "lightgbm_classifier_without_duration_pipeline.joblib"
+    },
+    "split_strategy": "Chronological 80/20 split",
+    "test_size": 14566,
+    "duration_note": "Actual validated duration is available only after a session ends. Do not treat the duration-based model as a session-start model."
+}
